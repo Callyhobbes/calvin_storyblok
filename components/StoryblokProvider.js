@@ -10,13 +10,13 @@ import Feature from "./Feature";
 
 /** 3. Initialize it as usual */
 storyblokInit({
-  accessToken: "your-access-token",
+  accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
   use: [apiPlugin],
   components: {
     teaser: Teaser,
     page: Page,
     grid: Grid,
-    feature: Feature
+    feature: Feature,
   },
 });
 
